@@ -26,13 +26,6 @@ Properties|19195a5b-6da0-11d0-afd3-00c04fd930c9|Domain-DNS Class - “Windows NT
 |Properties|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2|DS-Replication-Get-Changes-All - “Control access right that allows the replication of secret domain data.” Microsoft Docs|
 
 
-
-<img width="692" alt="Screen Shot 2019-11-13 at 11 02 46 AM" src="https://user-images.githubusercontent.com/1929963/68831093-96b1a980-06be-11ea-8bb9-ff41bee8a556.png">
-
-
-<img width="761" alt="Screen Shot 2019-11-13 at 11 02 54 AM" src="https://user-images.githubusercontent.com/1929963/68831309-f90aaa00-06be-11ea-8106-c18025daff60.png">
-
-
 <img width="1361" alt="Screen Shot 2019-11-13 at 10 59 20 AM" src="https://user-images.githubusercontent.com/1929963/68831341-193a6900-06bf-11ea-98b8-ab4dfdb71aad.png">
 
 
