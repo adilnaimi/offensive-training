@@ -19,11 +19,15 @@ When configured correctly, AD Domain Controllers will record Event IDs for group
 |----------|-----------|----------|-----------|-----------|-----------|
 4662|An operation was performed on an object|Microsoft-Windows-Security-Auditing|Directory Service Access|Audit Directory Service Access|Windows Event Logs|
 
+## DCSync Permissions
+The permissions needed vary based on domain functional level, explained in the [DACL required on each directory partition](https://support.microsoft.com/en-us/kb/2022387):
+
 |Attribute Name|Attribute Value|Description|
 |----------|-----------|-----------|
-Access Mask|0x100|Control Access - “Access allowed only after extended rights checks supported by the object are performed. The right to perform an operation controlled by an extended access right.” - Microsoft Docs|
-Properties|19195a5b-6da0-11d0-afd3-00c04fd930c9|Domain-DNS Class - “Windows NT domain with DNS-based (DC=) naming.” - Microsoft Docs|
-|Properties|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2|DS-Replication-Get-Changes-All - “Control access right that allows the replication of secret domain data.” Microsoft Docs|
+Access Mask|0x100|Control Access - |
+Properties|1131f6aa-9c07-11d1-f79f-00c04fc2dcd2|[DS-Replication-Get-Changes](https://docs.microsoft.com/en-us/windows/win32/adschema/r-ds-replication-get-changes?redirectedfrom=MSDN)|
+Properties|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2|[Replicating Directory Changes All](https://msdn.microsoft.com/en-us/library/ms684355(v=vs.85).aspx)|
+Properties|89e95b76-444d-4c62-991a-0facbeda640c|[Replicating Directory Changes In Filtered Set](https://msdn.microsoft.com/en-us/library/hh338663(v=vs.85).aspx)|
 
 
 <img width="1361" alt="Screen Shot 2019-11-13 at 10 59 20 AM" src="https://user-images.githubusercontent.com/1929963/68831341-193a6900-06bf-11ea-98b8-ab4dfdb71aad.png">
