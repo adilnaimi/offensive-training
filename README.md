@@ -16,7 +16,7 @@ DCSYNC is a technique takes advantage of how domain controllers legitimately rep
 When configured correctly, AD Domain Controllers will record Event IDs for group modifications. The following event IDs are of interest for this ADS: 
 
 |Event ID|Event Name|Log Provider|Audit Category|Audit Subcategory|ATT&CK Data Source|
-|----------|-----------|----------|-----------|-----------|
+|----------|-----------|----------|-----------|-----------|-----------|
 4662|An operation was performed on an object|Microsoft-Windows-Security-Auditing|Directory Service Access|Audit Directory Service Access|Windows Event Logs|
 
 |Attribute Name|Attribute Value|Description|
@@ -24,6 +24,8 @@ When configured correctly, AD Domain Controllers will record Event IDs for group
 Access Mask|0x100|Control Access - “Access allowed only after extended rights checks supported by the object are performed. The right to perform an operation controlled by an extended access right.” - Microsoft Docs|
 Properties|19195a5b-6da0-11d0-afd3-00c04fd930c9|Domain-DNS Class - “Windows NT domain with DNS-based (DC=) naming.” - Microsoft Docs|
 |Properties|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2|DS-Replication-Get-Changes-All - “Control access right that allows the replication of secret domain data.” Microsoft Docs|
+
+
 
 <img width="692" alt="Screen Shot 2019-11-13 at 11 02 46 AM" src="https://user-images.githubusercontent.com/1929963/68831093-96b1a980-06be-11ea-8bb9-ff41bee8a556.png">
 
