@@ -24,7 +24,7 @@ The permissions needed vary based on domain functional level, explained in the [
 
 |Attribute Name|Attribute Value|Description|
 |----------|-----------|-----------|
-Access Mask|0x100|Control Access - |
+Access Mask|0x100|Control Access - “Access allowed only after extended rights checks supported by the object are performed. The right to perform an operation controlled by an extended access right.” - [Microsoft Docs](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adts/990fb975-ab31-4bc1-8b75-5da132cd4584)|
 Properties|1131f6aa-9c07-11d1-f79f-00c04fc2dcd2|[DS-Replication-Get-Changes](https://docs.microsoft.com/en-us/windows/win32/adschema/r-ds-replication-get-changes?redirectedfrom=MSDN)|
 Properties|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2|[Replicating Directory Changes All](https://msdn.microsoft.com/en-us/library/ms684355(v=vs.85).aspx)|
 Properties|89e95b76-444d-4c62-991a-0facbeda640c|[Replicating Directory Changes In Filtered Set](https://msdn.microsoft.com/en-us/library/hh338663(v=vs.85).aspx)|
