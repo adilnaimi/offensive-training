@@ -84,7 +84,7 @@ Enumerate members of the domain admins group
 Validation can occur for this ADS by performing the following execution on a Windows host with RSAT installed:
 
 ```
-powershell_execute 'Get-DomainGroupMember -Identity "svc_accts" |select  MemberName,MemberObjectClass'
+powershell_execute 'Get-DomainGroupMember -Identity "svc_sql" |select  MemberName,MemberObjectClass'
 ``` 
 
 # Response
