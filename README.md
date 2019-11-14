@@ -90,5 +90,5 @@ In the event that this alert fires, the following response procedures are recomm
   * If the user is unaware of the activity, escalate to a security incident.
 
 # Additional Resources
-* [Privileged Groups in AD](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-b--privileged-accounts-and-groups-in-active-directory)
-* [Securing PAM](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
+* XXX
+* XXX
