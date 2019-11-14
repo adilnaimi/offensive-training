@@ -39,6 +39,14 @@ The Kibana Results:
 
 <img width="1361" alt="Screen Shot 2019-11-13 at 10 59 20 AM" src="https://user-images.githubusercontent.com/1929963/68831341-193a6900-06bf-11ea-98b8-ab4dfdb71aad.png">
 
+When expanding the kibana json log 1, inside of the Windows Event Security logs we found the Event ID 4662, showing this change. 
+
+We can tell by the Object Type, along with the Operation Type/Accesses and the user `sql_svc`:
+
+<img width="981" alt="Screen Shot 2019-11-14 at 10 08 58 AM" src="https://user-images.githubusercontent.com/1929963/68834428-cfee1780-06c6-11ea-94a3-a15fa212407f.png">
+
+
+
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
