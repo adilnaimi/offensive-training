@@ -1,5 +1,5 @@
 # Goal
-Detect artifacts related to DCSYNC operations in the network and how it's being used to credentials
+Detect artifacts related to DCSYNC operations in the network and how it's being used to credentials dumping
 
 # Categorization
 These attempts are categorized as [Credential Dumping / DCsync](https://attack.mitre.org/techniques/T1003/).
@@ -12,7 +12,7 @@ The strategy will function as follows:
 * Alert on any unusual changes to privileged groups.
 
 # Technical Context
- DCSYNC is a technique takes advantage of how domain controllers legitimately replicate domain objects. With the right permissions, it allows attackers to impersonate domain controllers and request the hashed credentials for any other users on the domain. It’s also a stealthy option; the attacker doesn’t need to run any malicious code on the domain controller and can selectively target the credentials of specific accounts.
+DCSYNC is a technique takes advantage of how domain controllers legitimately replicate domain objects. With the right permissions, it allows attackers to impersonate domain controllers and request the hashed credentials for any other users on the domain. It’s also a stealthy option; the attacker doesn’t need to run any malicious code on the domain controller and can selectively target the credentials of specific accounts.
 
 
 When configured correctly, AD Domain Controllers will record Event IDs for group modifications. The following event IDs are of interest for this ADS: 
@@ -20,6 +20,7 @@ When configured correctly, AD Domain Controllers will record Event IDs for group
 |Event Code|Description|
 |----------|-----------|
 4662| An operation was performed on an object.|
+
 
 The following AD builtin groups are monitored for changes: 
 
@@ -31,6 +32,8 @@ Enterprise Admins|Builtin administrators group for the domain|
 Schema Admins|Highly privileged builtin group|
 Account Operators|Highly privileged builtin group|
 Backup Operators|Highly privileged builtin group|
+
+
 
 # Blind Spots and Assumptions
 This strategy relies on the following assumptions:
