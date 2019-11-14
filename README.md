@@ -2,7 +2,7 @@
 Detect artifacts related to DCSYNC operations in the network and how it's being used to credentials dumping
 
 # Categorization
-These attempts are categorized as [Credential Dumping / DCsync](https://attack.mitre.org/techniques/T1003/).
+These attempts are categorized as [Credential Access using the DCSync Credential Dumping technique DCsync](https://attack.mitre.org/techniques/T1003/).
 
 # Strategy Abstract
 The strategy will function as follows:
