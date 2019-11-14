@@ -29,23 +29,15 @@ Properties|1131f6aa-9c07-11d1-f79f-00c04fc2dcd2|[DS-Replication-Get-Changes](htt
 Properties|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2|[Replicating Directory Changes All](https://msdn.microsoft.com/en-us/library/ms684355(v=vs.85).aspx)|
 Properties|89e95b76-444d-4c62-991a-0facbeda640c|[Replicating Directory Changes In Filtered Set](https://msdn.microsoft.com/en-us/library/hh338663(v=vs.85).aspx)|
 
+By using [HELK](https://github.com/Cyb3rWard0g/HELK) and Leveraging the Kibana query engine KQL using the above attributes, we used following Query to ectract the informtion from the collected data:
+
+```
+(event_id:4662 AND NOT user_name.keyword:*$ AND object_operation_type:"Object Access" AND object_access_mask_requested:"0x100" AND object_properties:("*1131f6aa-9c07-11d1-f79f-00c04fc2dcd2*" OR "*1131f6ad-9c07-11d1-f79f-00c04fc2dcd2*" OR "*89e95b76-444d-4c62-991a-0facbeda640c*"))
+``
+
+The Kibana Results: 
 
 <img width="1361" alt="Screen Shot 2019-11-13 at 10 59 20 AM" src="https://user-images.githubusercontent.com/1929963/68831341-193a6900-06bf-11ea-98b8-ab4dfdb71aad.png">
-
-
-
-
-The following AD builtin groups are monitored for changes: 
-
-|Group Name|Description|
-|----------|-----------|
-Administrators|Builtin administrators group for the domain|
-Domain Admins|Builtin administrators group for the domain|
-Enterprise Admins|Builtin administrators group for the domain|
-Schema Admins|Highly privileged builtin group|
-Account Operators|Highly privileged builtin group|
-Backup Operators|Highly privileged builtin group|
-
 
 
 # Blind Spots and Assumptions
