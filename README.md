@@ -7,7 +7,7 @@ These attempts are categorized as [Credential Access using the DCSync Credential
 # Strategy Abstract
 The strategy will function as follows:
 * Discovers Domain Controller in the specified domain name.
-* Requests the Domain Controller replicate the user credentials via [GetNCChanges](https://msdn.microsoft.com/en-us/library/dd207691.aspx) (leveraging [Directory Replication Service (DRS) Remote Protocol] (https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-drsr/f977faaa-673e-4f66-b9bf-48c640241d47?redirectedfrom=MSDN))
+* Requests the Domain Controller replicate the user credentials via [GetNCChanges](https://msdn.microsoft.com/en-us/library/dd207691.aspx) (leveraging [Directory Replication Service (DRS) Remote Protocol](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-drsr/f977faaa-673e-4f66-b9bf-48c640241d47?redirectedfrom=MSDN))
 
 # Technical Context
 DCSYNC is a technique takes advantage of how domain controllers legitimately replicate domain objects. With the right permissions, it allows attackers to impersonate domain controllers and request the hashed credentials for any other users on the domain. It’s also a stealthy option; the attacker doesn’t need to run any malicious code on the domain controller and can selectively target the credentials of specific accounts.
