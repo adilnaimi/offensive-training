@@ -19,15 +19,6 @@ When configured correctly, AD Domain Controllers will record Event IDs for group
 
 |Event Code|Description|
 |----------|-----------|
-4727|A security-enabled global group was created.|
-4728|A member was added to a security-enabled global group.|
-4729|A member was removed from a security-enabled global group.|
-4730|A security-enabled global group was deleted.|
-4754|A security-enabled universal group was created.|
-4756|A member was added to a security-enabled universal group.|
-4757|A member was removed from a security-enabled universal group.|
-4758|A security-enabled universal group was deleted.|
-4764|A group's type was changed.|
 4662| An operation was performed on an object.|
 
 The following AD builtin groups are monitored for changes: 
