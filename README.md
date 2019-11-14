@@ -43,7 +43,7 @@ When expanding the kibana json log 1, inside of the Windows Event Security logs 
 
 We can tell by the Object Type, along with the Operation Type/Accesses and the user `sql_svc`:
 
-<img width="981" alt="Screen Shot 2019-11-14 at 10 08 58 AM" src="https://user-images.githubusercontent.com/1929963/68834428-cfee1780-06c6-11ea-94a3-a15fa212407f.png">
+<img width="931" alt="Screen Shot 2019-11-14 at 10 12 43 AM" src="https://user-images.githubusercontent.com/1929963/68834650-530f6d80-06c7-11ea-85b6-03f6fcd661df.png">
 
 
 
