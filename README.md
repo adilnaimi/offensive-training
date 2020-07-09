@@ -2,7 +2,7 @@
 Detect artifacts related to DCSYNC operations in the network and how it's being used to credentials dumping
 
 # Categorization
-These attempts are categorized as [Credential Access using the DCSync Credential Dumping technique DCsync](https://attack.mitre.org/techniques/T1003/).
+These attempts are categorized as [Credential Access using the DCSync Credential Dumping technique DCsync](https://attack.mitre.org/techniques/T1003/006/).
 
 # Strategy Abstract
 The strategy will function as follows:
@@ -29,7 +29,7 @@ Properties|1131f6aa-9c07-11d1-f79f-00c04fc2dcd2|[DS-Replication-Get-Changes](htt
 Properties|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2|[Replicating Directory Changes All](https://msdn.microsoft.com/en-us/library/ms684355(v=vs.85).aspx)|
 Properties|89e95b76-444d-4c62-991a-0facbeda640c|[Replicating Directory Changes In Filtered Set](https://msdn.microsoft.com/en-us/library/hh338663(v=vs.85).aspx)|
 
-By using [HELK](https://github.com/Cyb3rWard0g/HELK) and Leveraging the Kibana query engine KQL using the above attributes, we used following Query to ectract the informtion from the collected data:
+By using [HELK](https://github.com/Cyb3rWard0g/HELK) and Leveraging the Kibana query engine KQL using the above attributes, we used following Query to extract the informtion from the collected data:
 
 ```
 (event_id:4662 AND NOT user_name.keyword:*$ AND object_operation_type:"Object Access" AND object_access_mask_requested:"0x100" AND object_properties:("*1131f6aa-9c07-11d1-f79f-00c04fc2dcd2*" OR "*1131f6ad-9c07-11d1-f79f-00c04fc2dcd2*" OR "*89e95b76-444d-4c62-991a-0facbeda640c*"))
