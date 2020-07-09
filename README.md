@@ -98,5 +98,4 @@ In the event that this alert fires, the following response procedures are recomm
   * If the user is unaware of the activity, escalate to a security incident.
 
 # Additional Resources
-* XXX
-* XXX
+* TBD
